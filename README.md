@@ -1,2 +1,2 @@
-# ArturButs.github.io
+# arturbuts.github.io
 My first published website

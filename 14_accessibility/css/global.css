@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--text-black);
+  background-color: var(--bg-white);
+  font-weight: 400;
+}
+
+/* global */
+.container {
+  max-width: var(--container-max-width);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-titles {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+.text,
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.reset-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.reset-btn:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: var(--btn-radius);
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-white);
+  background-color: var(--default-orange);
+  padding: 25px 39px;
+  border: none;
+  outline: none;
+  text-align: center;
+
+  transition: background-color var(--main-duration) var(--main-timing-function);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--hover-orange);
+}
+
+.btn:active {
+  background-color: var(--active-orange);
+}
+
+.main {
+  margin-bottom: var(--bg-section-offset);
+}
+
+@media (max-width: 1280px) {
+  .main {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 601px) {
+  .section-titles {
+    font-size: 24px;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .main {
+    margin-bottom: 60px;
+  }
+}
+
+@media (any-hover: hover) {
+	.btn:hover:not(:active) {
+		background-color: var(--hover-orange);
+	}
+} 

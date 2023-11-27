@@ -1,0 +1,376 @@
+/* footer */
+.footer {
+  background-color: var(--bg-black);
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__left {
+  margin-right: 40px;
+}
+
+.footer__logo {
+  margin-bottom: 19px;
+}
+
+.footer__img {
+  display: block;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  color: var(--text-grey);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+  outline: none;
+
+  transition: background-color var(--main-duration) var(--main-timing-function),
+    outline-offset var(--main-duration) var(--main-timing-function),
+    color var(--main-duration) var(--main-timing-function);
+}
+
+
+.footer__link:focus-visible:not(:hover) {
+  outline: 2px solid var(--default-orange);
+  outline-offset: 5px;
+  color: var(--text-grey);
+}
+
+.footer__link:active {
+  color: var(--active-orange);
+}
+
+.footer__nav {
+  margin-bottom: 90px;
+}
+
+.socials__list {
+  color: var(--main-grey);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.socials__link {
+  outline: none;
+  transition: color var(--main-duration) var(--main-timing-function),
+    outline-offset var(--main-duration) var(--main-timing-function);
+}
+
+.socials__link:focus-visible:not(:hover) {
+  outline: 2px solid var(--default-orange);
+  outline-offset: 5px;
+  color: var(--main-grey);
+}
+
+.socials__link:active {
+  color: var(--active-orange);
+}
+
+.footer__middle {
+  margin-right: 236px;
+  margin-left: auto;
+}
+
+.footer__subtitle {
+  color: var(--text-grey);
+  margin-bottom: 24px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__inputs {
+  color: var(--text-grey);
+
+  border-radius: var(--btn-radius);
+  background-color: var(--input-default);
+  padding: 14px 24px;
+  border: none;
+
+  width: 570px;
+  height: 60px;
+
+  margin-bottom: 25px;
+
+  transition: background-color var(--main-duration) var(--main-timing-function);
+}
+
+.footer__inputs:focus {
+  background-color: var(--main-grey);
+  border: none;
+}
+
+.footer__inputs:active {
+  background-color: var(--main-grey);
+  border: none;
+}
+
+.footer__inputs::placeholder {
+  color: var(--text-grey);
+  font-size: 16px;
+  line-height: 32px;
+
+  transition: color var(--main-duration) var(--main-timing-function),
+    border var(--main-duration) var(--main-timing-function);
+}
+
+.footer__inputs:active::placeholder {
+  color: var(--text-white);
+  border: none;
+}
+
+.footer__textarea {
+  resize: none;
+  width: 100%;
+  max-width: 570px;
+  height: 150px;
+
+  margin-bottom: 32px;
+}
+
+.footer__btn {
+  padding: 19px 52px;
+  font-size: 16px;
+  line-height: normal;
+  margin-right: 18px;
+}
+
+.footer__label {
+  cursor: pointer;
+}
+
+.footer__checkbox--visual {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-grey);
+  vertical-align: middle;
+}
+
+.footer__checkbox--visual::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 4px;
+  border-left: 2px solid var(--checked-color);
+  border-bottom: 2px solid var(--checked-color);
+  opacity: 0;
+  transform: translate(-50%, -60%) rotate(-45deg) scale(1.5);
+  transition-property: opacity, transform;
+  transition-duration: var(--main-duration);
+}
+
+.footer__checkbox:checked ~ .footer__checkbox--visual::before {
+  opacity: 1;
+  transform: translate(-50%, -60%) rotate(-45deg) scale(1.5);
+}
+
+.footer__lisence {
+  vertical-align: middle;
+  color: var(--text-grey);
+}
+
+.footer__descr {
+  color: var(--text-grey);
+  padding-top: 87px;
+
+  width: 100%;
+  max-width: 363px;
+}
+
+@media (max-width: 1560px) {
+		.footer__right {
+			display: none;
+		}
+}
+
+@media (max-width: 1280px) {
+  .footer__middle {
+    margin-right: 0;
+  }
+
+  .footer__inputs {
+    width: 541px;
+  }
+
+  .footer__textarea {
+    width: 541px;
+    margin-bottom: 31px;
+  }
+
+  .footer__btn {
+    padding: 20px 37px;
+  }
+
+  .footer__nav {
+    margin-bottom: 91px;
+  }
+
+  .footer__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .footer__checkbox--visual {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 962px) {
+  .footer__container {
+    padding-bottom: 40px;
+    padding-top: 51px;
+  }
+
+  .footer__nav {
+		display: none;
+  }
+
+  .footer__left {
+    order: 2;
+  }
+
+  .footer__middle {
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .footer__inputs {
+    width: 100%;
+  }
+
+  .footer__textarea {
+    width: 100%;
+  }
+
+  .footer__logo {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .footer__btn {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 601px) {
+  .footer__middle {
+    margin-bottom: 44px;
+  }
+
+  .footer__container {
+    padding-top: 30px;
+  }
+
+  .footer__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .footer__inputs {
+    padding: 14px 19px;
+  }
+
+  .footer__inputs::placeholder {
+    font-size: 14px;
+  }
+
+  .footer__textarea {
+    margin-bottom: 24px;
+  }
+
+  .footer__btns {
+    position: relative;
+    gap: 12px;
+  }
+
+  .footer__btns::after {
+    content: "";
+    position: absolute;
+    width: 290px;
+    height: 1px;
+    background-color: #414141;
+    bottom: -28px;
+  }
+
+  .footer__btn {
+    font-size: 12px;
+    padding: 13px 19px;
+    border-radius: var(--btn-radius);
+  }
+
+  .footer__label {
+    font-size: 16px;
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 7px;
+  }
+
+  .footer__container {
+    justify-content: center;
+  }
+
+  .footer__logo {
+    width: 131px;
+    height: 42px;
+  }
+
+  .socials__list {
+    gap: 16px;
+  }
+
+  .socials__link {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media (any-hover: hover) {
+	.footer__link:hover:not(:active) {
+		color: var(--default-orange);
+	}
+
+	.socials__link:hover:not(:active) {
+		color: var(--default-orange);
+	}
+
+	.footer__inputs:hover:not(:active) {
+		background-color: var(--main-grey);
+		border: none;
+	}
+} 

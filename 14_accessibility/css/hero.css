@@ -1,0 +1,145 @@
+/* hero */
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero__container {
+  width: 100%;
+  padding: 100px 80px;
+}
+
+.hero__bg {
+  width: 100%;
+  background-image: url("../img/hero-section.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--main-border-radius);
+  overflow: hidden;
+}
+
+.hero__title {
+  color: var(--text-white);
+  font-size: 70px;
+  font-weight: 800;
+  line-height: normal;
+
+  width: 100%;
+  max-width: 837px;
+
+  margin-bottom: 24px;
+}
+
+.hero__descr {
+  color: var(--text-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+
+  width: 100%;
+  max-width: 810px;
+
+  margin-bottom: 90px;
+}
+
+.hero__btn {
+  color: var(--text-white);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 1280px) {
+  .hero {
+    margin-bottom: 35px;
+  }
+
+	.hero__container {
+    padding: 160px 77px;
+  }
+
+	.hero__bg {
+    width: 100%;
+    background-image: url("../img/hero-section@1024.jpg");
+  }
+
+  .hero__title {
+    font-size: 60px;
+    margin-bottom: 16px;
+    max-width: 770px;
+  }
+
+  .hero__descr {
+    font-size: 20px;
+    margin-bottom: 60px;
+    max-width: 660px;
+  }
+
+  .hero__btn {
+    font-size: 24px;
+    padding: 24px 35px;
+  }
+}
+
+@media (max-width: 962px) {
+	.hero__container {
+    padding: 160px 40px;
+  }
+
+	.hero__bg {
+    width: 100%;
+    background-image: url("../img/hero-section@768.jpg");
+    border-radius: var(--main-border-radius);
+  }
+
+  .hero__title {
+    font-size: 50px;
+    max-width: 588px;
+    margin-bottom: 16px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    max-width: 588px;
+  }
+
+  .hero__btn {
+    font-size: 23px;
+    padding: 25px 40px;
+  }
+}
+
+@media (max-width: 601px) {
+  .hero {
+    margin-bottom: var(--bg-section-offset);
+  }
+
+  .hero__container {
+    text-align: center;
+    padding: 59px 22px;
+  }
+
+  .hero__bg {
+    width: 100%;
+    background-image: url("../img/hero-section@320.jpg");
+    border-radius: var(--main-border-radius);
+  }
+
+  .hero__title {
+    font-size: 20px;
+    font-weight: 800;
+		margin-bottom: 8px;
+  }
+
+  .hero__descr {
+    font-size: 12px;
+    font-weight: 700;
+		margin-bottom: 35px;
+  }
+
+  .hero__btn {
+    font-size: 12px;
+		padding: 13px 29px;
+    border-radius: 8px;
+  }
+}

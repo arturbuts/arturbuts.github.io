@@ -1,0 +1,52 @@
+:root {
+  /* measurement */
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+  --gap: 32px;
+  --main-border-radius: 32px;
+  --btn-radius: 16px;
+  --sm-section-offset: 50px;
+  --bg-section-offset: 100px;
+
+  /* colors */
+  --text-black: #000;
+  --text-white: #fff;
+  --bg-white: #fff;
+  --bg-black: #000;
+  --default-orange: #ff9900;
+  --hover-orange: #ffb84d;
+  --active-orange: #e1670e;
+  --main-grey: #666666;
+  --text-grey: #cacaca;
+  --border-grey: #cacaca;
+  --checked-color: #97ee3f;
+  --input-default: #414141;
+
+  /* transitions */
+  --main-duration: 0.3s;
+  --main-timing-function: ease-in-out;
+}
+
+@media (max-width: 1280px) {
+	:root {
+		--sm-section-offset: 40px;
+  }
+}
+
+@media (max-width: 962px) {
+	:root {
+		--main-border-radius: 24px;
+		--bg-section-offset: 80px;
+  }
+}
+
+@media (max-width: 601px) {
+  :root {
+		--sm-section-offset: 20px;
+		--main-border-radius: 16px;
+    --container-padding: 15px;
+		--bg-section-offset: 60px;
+		--main-border-radius: 16px;
+		--btn-radius: 8px;
+  }
+}

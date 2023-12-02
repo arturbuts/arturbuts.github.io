@@ -1,0 +1,28 @@
+.footer__container--top {
+	background-color: #2E2B44;
+	margin-bottom: 3px;
+}
+
+.footer__socials {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding-top: 28px;
+	padding-bottom: 21px;
+}
+
+.footer__licence {
+	display: block;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.reg {
+	color: #3F2AFF;
+}
